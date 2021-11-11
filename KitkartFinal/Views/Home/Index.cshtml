@@ -1,0 +1,37 @@
+﻿@model List<Product>
+<h1> Welcome to kitkart </h1>
+@if (Model != null)
+{
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> Product Name </th>
+            <th> Product Image </th>
+            <th> Price </th>
+            <th> Available Qty </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var p in Model)
+        {
+<tr>
+    <td>@p.ID</td>
+    <td>@p.ProductName</td>
+    
+
+    <td><img src="@p.ProductImage" alt="Stickman" width="124" height="139"/></td>
+   
+
+    <td>@p.Price</td>
+    <td>@p.AvailableQty</td>
+
+    <td><a href="/OrderNow?id=@p.ID">Order Now</a></td>
+
+</tr>}
+    </tbody>
+</table>}

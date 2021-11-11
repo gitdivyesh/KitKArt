@@ -1,0 +1,27 @@
+﻿@model Product
+@if (Model != null)
+{
+<form action="buy?id=@Model.ID" method="post">
+    <span>Product Id:</span>@Model.ID
+    <br />
+    
+    <br /><span>ProductName:</span>@Model.ProductName
+    <br /><span>ProductImage:</span><img src="@Model.ProductImage" alt="Stickman" width="200" height="100" />
+    <br />
+    <br /><span>Total Stock:</span>@Model.AvailableQty
+    <br />
+    @if (Model.AvailableQty > 0)
+    {
+<button type="submit">Buy</button> }
+    else
+    {
+        <div>Out Of Stock</div>}
+
+
+
+</form> 
+}
+else
+{
+<h1>Added to Cart</h1>
+}
