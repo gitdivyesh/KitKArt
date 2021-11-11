@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace KitkartFinal.Migrations
 {
     [DbContext(typeof(DbContextfile))]
-    [Migration("20211111161052_news")]
+    [Migration("20211111193108_news")]
     partial class news
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
