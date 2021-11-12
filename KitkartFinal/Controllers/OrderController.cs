@@ -50,7 +50,7 @@ namespace KitkartFinal.Controllers
                     queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
 
                     // Create a new message to send to the queue.
-                    string messageBody = $"{numberOfMessages}:{prod}";
+                    string messageBody = $"'PId':{prod},'AvailableQty':{numberOfMessages}";
                     var message = new Message(Encoding.UTF8.GetBytes(messageBody));
 
 
