@@ -15,8 +15,7 @@ namespace KitkartFinal.Controllers
         public class OrderController : Controller
         {
         const string ServiceBusConnectionString =
-       "Endpoint=sb://bruhhhhhh.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=5dRfpvcUiJcoX+IQvwJ57En13cjCoR0FnIkzhnJ1btE=";
-            
+      "Endpoint=sb://newsb423.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=v3CDoxTnSDiJc03XFpj2cq25es94sV2EQ03SfBmRgRc=";   
             const string QueueName = "queue";
             static IQueueClient queueClient;
 
