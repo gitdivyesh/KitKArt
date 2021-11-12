@@ -55,7 +55,7 @@ namespace KitkartFinal.Controllers
                 // Create a new message to send to the queue.
 
                 
-                    string messageBody = $"{prod}:{numberOfMessages}";
+                    string messageBody = $"{prod}";
                
              
                 
