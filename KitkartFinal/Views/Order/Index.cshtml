@@ -6,7 +6,7 @@
     <br />
     
     <br /><span>ProductName:</span>@Model.ProductName
-    <br /><span>ProductImage:</span><img src="@Model.ProductImage" alt="Stickman" width="200" height="100" />
+    <br /><span>ProductImage:</span><img src="@Model.ProductImage" alt="Stickman" width="400" height="400" />
     <br />
     <br /><span>Total Stock:</span>@Model.AvailableQty
     <br />
@@ -23,5 +23,7 @@
 }
 else
 {
-<h1>Added to Cart</h1>
+<h2>Thanks For shopping</h2>
+<a asp-controller="Home" asp-action="Index">Back to List</a>
+
 }
