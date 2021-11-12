@@ -21,7 +21,7 @@ namespace KitkartFinal.Models
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"server=divyeshs.database.windows.net;Database=newdb;uid=login;password=12345678@a");
+            optionsBuilder.UseSqlServer(@"server=divyeshs1.database.windows.net;Database=newdb;uid=login;password=12345678@a");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         { }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace KitkartFinal.Migrations
 {
-    public partial class news : Migration
+    public partial class @new : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
