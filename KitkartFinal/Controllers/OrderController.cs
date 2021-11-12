@@ -44,13 +44,23 @@ namespace KitkartFinal.Controllers
                     context.SaveChanges();
                     products.AvailableQty -= 1;
                     context.Product.Update(products);
+   
+
 
                     int numberOfMessages = products.AvailableQty;
                     int prod = products.ID;
+
                     queueClient = new QueueClient(ServiceBusConnectionString, QueueName);
 
-                    // Create a new message to send to the queue.
-                    string messageBody = $"'PId':{prod},'AvailableQty':{numberOfMessages}";
+                // Create a new message to send to the queue.
+
+                
+                    string messageBody = $"{prod}:{numberOfMessages}";
+               
+             
+                
+                
+                
                     var message = new Message(Encoding.UTF8.GetBytes(messageBody));
 
 
